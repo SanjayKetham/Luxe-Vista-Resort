@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Vista Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f7f9fc;
+        }
+
+        header {
+            background: #004d40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        section#home {
+            background-image: url('welcome.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        section#services {
+            background: #fff9c4;
+        }
+
+        section#contact {
+            background: #ffecb3;
+        }
+
+        footer {
+            background: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .service-item img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+            flex: 1 1 300px;
+        }
+
+        .service-item .service-text {
+            flex: 1 1 300px;
+        }
+
+        .service-item h3 {
+            margin-top: 0;
+            color: #004d40;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            min-width: 300px;
+            margin: 20px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background: #004d40;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #00332e;
+        }
+
+        #about {
+            background: #fff;
+            padding: 60px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 40px 0;
+        }
+
+        #about h3 {
+            text-align: center;
+            font-size: 36px;
+            color: #004d40;
+            margin-bottom: 40px;
+        }
+
+        .abt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .carousel {
+            width: 80%;
+            margin-bottom: 40px;
+        }
+
+        .carousel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            max-width: 600px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Luxe Vista Resort</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to Luxe Vista Resort!</h1>
+            <p>Your perfect getaway awaits. Nestled in the heart of nature, Luxe Vista Resort offers an unparalleled blend of luxury, comfort, and adventure.</p>
+            <p>Indulge in our world-class amenities, including a state-of-the-art spa, gourmet dining experiences, and a variety of thrilling outdoor activities. Whether you're seeking relaxation or adventure, we have something for everyone.</p>
+            <p>Join us and create unforgettable memories. Explore our resort, enjoy the breathtaking views, and let us take care of the rest.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h3>About Us</h3>
+            <div class="abt">
+                <div class="carousel">
+                    <div><img src="aboutus.jpg" alt="About Us 1"></div>
+                    <div><img src="aboutus1.jpg" alt="About Us 2"></div>
+                    <div><img src="aboutus2.jpg" alt="About Us 3"></div>
+                </div>
+                <div class="about-text">
+                    <p>Welcome to Luxe Vista Resort, your ultimate destination for luxury and comfort. Nestled in the heart of Paradise City, our resort offers a unique blend of modern amenities and serene natural beauty.</p>
+                    <p>Our mission is to provide our guests with an unforgettable experience, from our world-class spa and wellness treatments to our gourmet dining options. Whether you're here for a relaxing getaway or an adventurous vacation, Luxe Vista Resort is the perfect place to unwind and enjoy the best that life has to offer.</p>
+                    <p>We pride ourselves on our exceptional service and attention to detail. Our dedicated team is here to ensure that every aspect of your stay exceeds your expectations.</p>
+                    <p>Thank you for choosing Luxe Vista Resort. We look forward to welcoming you and making your stay with us a memorable one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <img src="spa.jpg" alt="Spa and Wellness">
+                <div class="service-text">
+                    <h3>Spa and Wellness</h3>
+                    <p>Experience ultimate relaxation and rejuvenation with our world-class spa treatments and wellness programs.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="dining.avif" alt="Gourmet Dining">
+                <div class="service-text">
+                    <h3>Gourmet Dining</h3>
+                    <p>Savor the flavors of our gourmet cuisine, prepared by top chefs using the finest ingredients.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="luxury.jpg" alt="Luxury Accommodations">
+                <div class="service-text">
+                    <h3>Luxury Accommodations</h3>
+                    <p>Enjoy a stay in our elegantly appointed rooms and suites, offering stunning views and modern amenities.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="adv.jpg" alt="Adventure Activities">
+                <div class="service-text">
+                    <h3>Adventure Activities</h3>
+                    <p>Embark on thrilling adventures with our wide range of activities, including hiking, snorkeling, and more.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="event.jpg" alt="Event Planning">
+                <div class="service-text">
+                    <h3>Event Planning</h3>
+                    <p>Let us help you create unforgettable memories with our expert event planning services for weddings, conferences, and special occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h3>Our Contact Information</h3>
+                    <p><strong>Address:</strong> 123 Resort Lane, Paradise City PC 12345</p>
+                    <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@luxevistaresort.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Luxe Vista Resort. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+</html>
